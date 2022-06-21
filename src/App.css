@@ -29,6 +29,14 @@ main{
   text-align: center;
 }
 
+button {
+  width: 8em;
+  height: 3em;
+  font-size: 1em;
+  font-weight: bold;
+  background-color: plum;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

@@ -12,6 +12,7 @@ const RecipeList = (props) => {
                 name={recipe.name}
                 ingredients={recipe.ingredients}
                 mealType={recipe.mealType}
+                onDelete={props.onDelete}
             />
         )
     })
@@ -20,7 +21,7 @@ const RecipeList = (props) => {
         <>
             <h2>Recipe Count: {props.recipes.length}</h2>
             <section>
-                <ul class="container">{recipeComponentsArray}</ul>
+                <ul className="container">{recipeComponentsArray}</ul>
             </section>
         </>
     )
@@ -28,7 +29,8 @@ const RecipeList = (props) => {
 }
 
 RecipeList.propTypes = {
-    recipes: PropTypes.arrayOf(PropTypes.object).isRequired
+    recipes: PropTypes.arrayOf(PropTypes.object).isRequired,
+    onDelete: PropTypes.func.isRequired
 }
 
 

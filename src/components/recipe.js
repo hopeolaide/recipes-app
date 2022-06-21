@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from 'prop-types';
 
 
-const Recipe = ({name, ingredients, mealType}) => {
+const Recipe = ({id, name, ingredients, mealType, onDelete}) => {
 // props is going to an object with a list of ingredients
     
     const ingredientList = ingredients.map((ingredient) => {
@@ -11,8 +11,12 @@ const Recipe = ({name, ingredients, mealType}) => {
         )
     })
 
+    const onClickRemove = (id) => {
+        onDelete(id)
+    }
+
     return (
-        <li class="recipes">
+        <li className="recipes">
             <h3>{name}</h3>
             <h4>Ingredients:</h4>
                 <ul>
@@ -20,6 +24,8 @@ const Recipe = ({name, ingredients, mealType}) => {
                 </ul>
             
             <h4>Meal Type: {mealType}</h4>
+            <button onClick={onClickRemove({id})}>Delete Recipe</button>
+
         </li>
     )
 
