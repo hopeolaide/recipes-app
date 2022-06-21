@@ -5,13 +5,13 @@ import PropTypes from 'prop-types';
 const Recipe = ({id, name, ingredients, mealType, onDelete}) => {
 // props is going to an object with a list of ingredients
     
-    const ingredientList = ingredients.map((ingredient) => {
+    const ingredientList = ingredients.map((ingredient, index) => {
         return(
-            <li>{ingredient}</li>
+            <li key={index}>{ingredient}</li>
         )
     })
 
-    const onClickRemove = (id) => {
+    const onClickRemove = () => {
         onDelete(id)
     }
 
@@ -24,7 +24,7 @@ const Recipe = ({id, name, ingredients, mealType, onDelete}) => {
                 </ul>
             
             <h4>Meal Type: {mealType}</h4>
-            <button onClick={onClickRemove({id})}>Delete Recipe</button>
+            <button onClick={onClickRemove}>Delete Recipe</button>
 
         </li>
     )

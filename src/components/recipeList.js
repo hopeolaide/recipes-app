@@ -9,6 +9,7 @@ const RecipeList = (props) => {
         return (
             <Recipe
                 key={recipe.id}
+                id = {recipe.id}
                 name={recipe.name}
                 ingredients={recipe.ingredients}
                 mealType={recipe.mealType}

@@ -9,6 +9,7 @@ function App() {
 
   const onDelete = (id) => {
     const newRecipes = recipes.filter((recipe) => {
+      console.log(recipe)
       // we only want to add the recipe to the array if it's id does not equal the id of the recipe we want to remove
       return recipe.id !== id;
     });
