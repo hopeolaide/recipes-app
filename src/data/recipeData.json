@@ -1,0 +1,48 @@
+[
+
+    {
+        "name": "Veggie Omelette",
+        "ingredients": [
+            "4 large eggs",
+            "handful spinach",
+            "1/4 diced onion",
+            "1/4 diced red or green red pepper",
+            "a sprinkle of garlic salt",
+            "a few dribbles of milk",
+            "any cheese your heart desires"
+        ],
+        "meal-type": "breakfast"
+    },
+    {
+        "name": "Leche Flan",
+        "ingredients": [
+            "10 large eggs",
+            "1 can condensed milk",
+            "1 cup fresh milk",
+            "1 cup granulated sugar",
+            "1 teaspoon vanilla extract"
+        ],
+        "meal-type": "dessert"
+    },
+    {
+        "name": "Mango Ice Cream",
+        "ingredients": [
+            "1/2 cup plain greek yogurt",
+            "1 cup frozen mango chunks",
+            "1/2 teaspoon ground ginger",
+            "2 tablespoons water, or measure with your eyes"
+        ],
+        "meal-type": "dessert"
+    },
+    {
+        "name": "miso soup",
+        "ingredients": [
+            "2 teaspoons dashi granules",
+            "4 cups of water or measure with your eyes",
+            "3 tablespoons miso paste",
+            "1 package of diced tofu",
+            "2 green onions, sliced diagonally into 1/2 inch pieces"
+        ],
+        "meal-type": "soup"
+    }
+]
